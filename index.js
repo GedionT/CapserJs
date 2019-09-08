@@ -1,19 +1,34 @@
-// module.exports = function Capser(string){
+module.exports = function Capser(string){
 
-function Capser(string){
-const chalk = require('chalk');
+	var stash = [];
 
-string.split('');
+	if(string != " ") {
 
-for(var i=0; i<string.length;i++){
+ 			string = string.split('');
 
-	if((i=0) || (string[i-1] == ' '))
-	{
-		chalk.green(string[i].toUpper());
-	}
+         for(var i=0; i < string.length ; i++)
+         { 
+ 		         stash.push(string[i]);
+         }
+
+         for(var i=0; i < string.length; i++)
+         {
+         		if(i==0)
+         		{
+         			var letter = stash[0];
+         			stash[0]   = letter.toUpperCase();
+         		}
+
+         		if(stash[i] == " ")
+         		{
+         			var letter = stash[i+1];
+         			stash[i+1] = letter.toUpperCase();
+         		}
+
+
+         }
+ 	}
+ 		 
+ 		return stash.join('');
 
 }
-
-}
-
-Capser("gedion teshome");
