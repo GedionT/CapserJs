@@ -1,0 +1,24 @@
+{
+  "name": "capserjs",
+  "version": "1.0.0",
+  "description": "SEO tool to capitalize important parts of a page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GedionT/CapserJs.git"
+  },
+  "keywords": [
+    "Capser",
+    "CapserJs",
+    "SEO_Tool"
+  ],
+  "author": "GedionT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GedionT/CapserJs/issues"
+  },
+  "homepage": "https://github.com/GedionT/CapserJs#readme"
+}
